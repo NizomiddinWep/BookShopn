@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    /* nav */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.nav-logo img{
+    width: 84%;
+}
+.search_bar{
+    border: 1px  solid black;
+    padding: 0.4rem 1.2rem;
+    border-radius: 7px;
+}
+input{
+    border: none;
+    outline: none;
+}
+/* header */
+header h1{
+    padding-top: 17rem;
+    font-size: 72px;
+    color: white;
+}
+header{
+    background-image: url("assets/orqa\ fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 585px;
+}
+    /* main */
+.main{
+    padding-top: 3rem;
+}
+.main h2{
+    font-size: 40px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 1.2   );
+    border-radius: 15px;
+    padding-top: 2rem;
+}
+.card img{
+    padding-top: 1.5rem;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+    /* footer */
+footer{
+    background-color: #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 2rem;
+}
+body br{
+    display: none;
+}
+
+@media only screen and (max-width:767px){
+    header h1{
+        padding-top: 17rem;
+        font-size: 42px;
+        color: white;
+        font-family: sans-serif;
+    }
+    body br{
+        display: block;
+    }
+    footer{
+        background-color: #c4c4c4;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 2rem;
+    }
+}
